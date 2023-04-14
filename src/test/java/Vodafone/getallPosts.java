@@ -15,7 +15,6 @@ public class getallPosts {
                 .when().get("posts")
                 .then().log().all()
                 .assertThat().statusCode(200)
-                .assertThat().body("[0].title", equalTo("sunt aut facere repellat provident occaecati excepturi optio reprehenderit"));
+                .assertThat().body("[1].title", equalTo("qui est esse"));
     }
-
 }
